@@ -1,6 +1,6 @@
 databases:
-  - name: mairie_db
-    databaseName: mairie_db
+  - name: mairie_tchad
+    databaseName: mairie_tchad
     user: mairie_user
 
 services:
@@ -22,21 +22,21 @@ services:
         value: mysql
       - key: DB_HOST
         fromDatabase:
-          name: mairie_db
+          name: mairie_tchad
           property: host
       - key: DB_PORT
         fromDatabase:
-          name: mairie_db
+          name: mairie_tchad
           property: port
       - key: DB_DATABASE
         fromDatabase:
-          name: mairie_db
+          name: mairie_tchad
           property: database
       - key: DB_USERNAME
         fromDatabase:
-          name: mairie_db
+          name: mairie_tchad
           property: user
       - key: DB_PASSWORD
         fromDatabase:
-          name: mairie_db
+          name: mairie_tchad
           property: password
